@@ -1,0 +1,21 @@
+C:\Api Reporte Vacaciones Pendientes\BOT 2.0\bin\Debug\net6.0-windows\Vacaciones Pendientes.exe
+C:\Api Reporte Vacaciones Pendientes\BOT 2.0\bin\Debug\net6.0-windows\Vacaciones Pendientes.deps.json
+C:\Api Reporte Vacaciones Pendientes\BOT 2.0\bin\Debug\net6.0-windows\Vacaciones Pendientes.runtimeconfig.json
+C:\Api Reporte Vacaciones Pendientes\BOT 2.0\bin\Debug\net6.0-windows\Vacaciones Pendientes.dll
+C:\Api Reporte Vacaciones Pendientes\BOT 2.0\bin\Debug\net6.0-windows\Vacaciones Pendientes.pdb
+C:\Api Reporte Vacaciones Pendientes\BOT 2.0\bin\Debug\net6.0-windows\DocumentFormat.OpenXml.dll
+C:\Api Reporte Vacaciones Pendientes\BOT 2.0\bin\Debug\net6.0-windows\SpreadsheetLight.dll
+C:\Api Reporte Vacaciones Pendientes\BOT 2.0\obj\Debug\net6.0-windows\Vacaciones Pendientes.csproj.AssemblyReference.cache
+C:\Api Reporte Vacaciones Pendientes\BOT 2.0\obj\Debug\net6.0-windows\BOT_2._0.Form1.resources
+C:\Api Reporte Vacaciones Pendientes\BOT 2.0\obj\Debug\net6.0-windows\BOT_2._0.Properties.Resources.resources
+C:\Api Reporte Vacaciones Pendientes\BOT 2.0\obj\Debug\net6.0-windows\Vacaciones Pendientes.csproj.GenerateResource.cache
+C:\Api Reporte Vacaciones Pendientes\BOT 2.0\obj\Debug\net6.0-windows\Vacaciones Pendientes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Api Reporte Vacaciones Pendientes\BOT 2.0\obj\Debug\net6.0-windows\Vacaciones Pendientes.AssemblyInfoInputs.cache
+C:\Api Reporte Vacaciones Pendientes\BOT 2.0\obj\Debug\net6.0-windows\Vacaciones Pendientes.AssemblyInfo.cs
+C:\Api Reporte Vacaciones Pendientes\BOT 2.0\obj\Debug\net6.0-windows\Vacaciones Pendientes.csproj.CoreCompileInputs.cache
+C:\Api Reporte Vacaciones Pendientes\BOT 2.0\obj\Debug\net6.0-windows\Vacaciones Pendientes.csproj.CopyComplete
+C:\Api Reporte Vacaciones Pendientes\BOT 2.0\obj\Debug\net6.0-windows\Vacaciones Pendientes.dll
+C:\Api Reporte Vacaciones Pendientes\BOT 2.0\obj\Debug\net6.0-windows\refint\Vacaciones Pendientes.dll
+C:\Api Reporte Vacaciones Pendientes\BOT 2.0\obj\Debug\net6.0-windows\Vacaciones Pendientes.pdb
+C:\Api Reporte Vacaciones Pendientes\BOT 2.0\obj\Debug\net6.0-windows\Vacaciones Pendientes.genruntimeconfig.cache
+C:\Api Reporte Vacaciones Pendientes\BOT 2.0\obj\Debug\net6.0-windows\ref\Vacaciones Pendientes.dll
