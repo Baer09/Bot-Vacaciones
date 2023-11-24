@@ -27,7 +27,7 @@ namespace BOT_2._0
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            log(fileLog, e.ToString() + " " + btnCerrar.Text);
+            log(fileLog,"L 30 btnCerrar");
             this.Close();
         }
 
@@ -58,6 +58,8 @@ namespace BOT_2._0
 
             txtInstancia.Clear();
 
+            log(fileLog,"L 61 btnInstancia");
+
         }
 
         private void txtInstancia_TextChanged(object sender, EventArgs e)
@@ -70,21 +72,21 @@ namespace BOT_2._0
         {
             //create path
             string instancia = txtInstancia.Text;
-            string idProducto = lblIdEmpleado.Text;
-            string path = @"C:\bots\" + Global._globalInstance + @"\" + Global._globalInstance + idProducto + ".txt";
+            string idEmpleado = lblIdEmpleado.Text;
+            string path = @"C:\bots\" + Global._globalInstance + @"\" + Global._globalInstance + idEmpleado + ".txt";
             //create txt file & save data
             //txtInstancia.Text
-            savedDataToTxtFile(txtInstancia.Text, lblIdEmpleado.Text, path, txtIdEmpleado.Text, e.ToString());
+            savedDataToTxtFile(txtInstancia.Text, lblIdEmpleado.Text, path, txtIdEmpleado.Text, "L 77 btnIdEmpleado");
             txtIdEmpleado.Clear();
         }
 
         private void btnNombreEmpleado_Click(object sender, EventArgs e)
         {
             string instancia = txtInstancia.Text;
-            string sunProducto = lblNombreEmpleado.Text;
-            string path = @"C:\bots\" + Global._globalInstance + @"\" + Global._globalInstance + sunProducto + ".txt";
+            string nombreEmpleado = lblNombreEmpleado.Text;
+            string path = @"C:\bots\" + Global._globalInstance + @"\" + Global._globalInstance + nombreEmpleado + ".txt";
 
-            savedDataToTxtFile(txtInstancia.Text, lblNombreEmpleado.Text, path, txtNombreEmpleado.Text, e.ToString());
+            savedDataToTxtFile(txtInstancia.Text, lblNombreEmpleado.Text, path, txtNombreEmpleado.Text, "L 87 btnNombreEmpleado");
             txtNombreEmpleado.Clear();
 
         }
@@ -92,30 +94,30 @@ namespace BOT_2._0
         private void btnPlaza_Click(object sender, EventArgs e)
         {
             string instancia = txtInstancia.Text;
-            string proveedor = lblPlaza.Text;
-            string path = @"C:\bots\" + Global._globalInstance + @"\" + Global._globalInstance + proveedor + ".txt";
+            string plaza = lblPlaza.Text;
+            string path = @"C:\bots\" + Global._globalInstance + @"\" + Global._globalInstance + plaza + ".txt";
 
-            savedDataToTxtFile(txtInstancia.Text, lblPlaza.Text, path, txtPlaza.Text, e.ToString());
+            savedDataToTxtFile(txtInstancia.Text, lblPlaza.Text, path, txtPlaza.Text,"L 98 btnPlaza");
             txtPlaza.Clear();
         }
 
         private void btnDepartamento_Click(object sender, EventArgs e)
         {
             string instancia = txtInstancia.Text;
-            string tipoProveedor = lblDepartamento.Text;
-            string path = @"C:\bots\" + Global._globalInstance + @"\" + Global._globalInstance + tipoProveedor + ".txt";
+            string departamento = lblDepartamento.Text;
+            string path = @"C:\bots\" + Global._globalInstance + @"\" + Global._globalInstance + departamento + ".txt";
 
-            savedDataToTxtFile(txtInstancia.Text, lblDepartamento.Text, path, txtDepartamento.Text, e.ToString());
+            savedDataToTxtFile(txtInstancia.Text, lblDepartamento.Text, path, txtDepartamento.Text,"L 108 btnDepartamento");
             txtDepartamento.Clear();
         }
 
         private void btnGerente_Click(object sender, EventArgs e)
         {
             string instancia = txtInstancia.Text;
-            string pais = lblGerente.Text;
-            string path = @"C:\bots\" + Global._globalInstance + @"\" + Global._globalInstance + pais + ".txt";
+            string gerente = lblGerente.Text;
+            string path = @"C:\bots\" + Global._globalInstance + @"\" + Global._globalInstance + gerente + ".txt";
 
-            savedDataToTxtFile(txtInstancia.Text, lblGerente.Text, path, txtGerente.Text, e.ToString());
+            savedDataToTxtFile(txtInstancia.Text, lblGerente.Text, path, txtGerente.Text,"L 118 btnGerente");
             txtGerente.Clear();
 
         }
@@ -123,24 +125,92 @@ namespace BOT_2._0
         private void btnFechaSolicitud_Click(object sender, EventArgs e)
         {
             string instancia = txtInstancia.Text;
-            string estatus = lblFechaSolicitud.Text;
-            string path = @"C:\bots\" + Global._globalInstance + @"\" + Global._globalInstance + estatus + ".txt";
+            string fechaSolicitud = lblFechaSolicitud.Text;
+            string path = @"C:\bots\" + Global._globalInstance + @"\" + Global._globalInstance + fechaSolicitud + ".txt";
 
-            savedDataToTxtFile(txtInstancia.Text, lblFechaSolicitud.Text, path, txtFechaSolicitud.Text, e.ToString());
+            savedDataToTxtFile(txtInstancia.Text, lblFechaSolicitud.Text, path, txtFechaSolicitud.Text, "L 129 btnFechaSolicitud");
             txtFechaSolicitud.Clear();
         }
 
         private void btnFechaInicio_Click(object sender, EventArgs e)
         {
             string instancia = txtInstancia.Text;
-            string solicitante = lblFechaInicio.Text;
-            string path = @"C:\bots\" + Global._globalInstance + @"\" + Global._globalInstance + solicitante + ".txt";
+            string fechaInicio = lblFechaInicio.Text;
+            string path = @"C:\bots\" + Global._globalInstance + @"\" + Global._globalInstance + fechaInicio + ".txt";
 
 
             // poner linea mas evento
             // ser mas especifico
-            savedDataToTxtFile(txtInstancia.Text, lblFechaInicio.Text, path, txtFechaInicio.Text, "l141 btnFechaInicio");
+            savedDataToTxtFile(txtInstancia.Text, lblFechaInicio.Text, path, txtFechaInicio.Text, "L 141 btnFechaInicio");
             txtFechaInicio.Clear();
+        }
+
+        private void btnPeriodoVacaiones_Click(object sender, EventArgs e)
+        {
+            string instancia = txtInstancia.Text;
+            string periodoVacaciones = lblPeriodoVacaciones.Text;
+            string path = @"C:\bots\" + Global._globalInstance + @"\" + Global._globalInstance + periodoVacaciones + ".txt";
+
+            savedDataToTxtFile(txtInstancia.Text, lblPeriodoVacaciones.Text, path, txtPeriodoVacaciones.Text, "L 152 btnPeriodoVacaciones ");
+            txtPeriodoVacaciones.Clear();
+
+
+        }
+
+        private void btnDiasSolicitud_Click(object sender, EventArgs e)
+        {
+            string instancia = txtInstancia.Text;
+            string diasSolicitud = lblDiasSolicitud.Text;
+            string path = @"C:\bots\" + Global._globalInstance + @"\" + Global._globalInstance + diasSolicitud + ".txt";
+
+            savedDataToTxtFile(txtInstancia.Text, lblDiasSolicitud.Text, path,txtDiasSolicitud.Text , "L 164 btnDiasSolicitud ");
+            txtDiasSolicitud .Clear();
+
+        }
+
+        private void btnFechaRetorno_Click(object sender, EventArgs e)
+        {
+            string instancia = txtInstancia.Text;
+            string fechaRetorno = lblFechaRetorno.Text;
+            string path = @"C:\bots\" + Global._globalInstance + @"\" + Global._globalInstance + fechaRetorno + ".txt";
+
+            savedDataToTxtFile(txtInstancia.Text, lblFechaRetorno.Text, path, txtFechaRetorno.Text, "L 175 btnFechaRetorno");
+            txtFechaRetorno.Clear();
+
+        }
+
+        private void btnEtapaActual_Click(object sender, EventArgs e)
+        {
+            string instancia = txtInstancia.Text;
+            string etapaAcutal = lblEtapaActual.Text;
+            string path = @"C:\bots\" + Global._globalInstance + @"\" + Global._globalInstance + etapaAcutal + ".txt";
+
+            savedDataToTxtFile(txtInstancia.Text, lblEtapaActual.Text, path, txtEtapaActual.Text, "L 186 btnEtapaActual");
+            txtEtapaActual.Clear();
+
+        }
+
+        private void btnFechaActualizacion_Click(object sender, EventArgs e)
+        {
+            string instancia = txtInstancia.Text;
+            string fechaActualizacion = lblFechaActualizacion.Text;
+            string path = @"C:\bots\" + Global._globalInstance + @"\" + Global._globalInstance + fechaActualizacion + ".txt";
+
+            savedDataToTxtFile(txtInstancia.Text, lblFechaActualizacion.Text, path, txtFechaActualizacion.Text, "L 197 btnFechaActualizacion");
+            txtFechaActualizacion.Clear();
+
+
+        }
+
+        private void btnPais_Click(object sender, EventArgs e)
+        {
+            string instancia = txtInstancia.Text;
+            string pais = lblPais.Text;
+            string path = @"C:\bots\" + Global._globalInstance + @"\" + Global._globalInstance + pais + ".txt";
+
+            savedDataToTxtFile(txtInstancia.Text, lblPais.Text, path, txtPais.Text, "L 209 btnPais");
+            txtPais.Clear();
+
         }
 
         public void savedDataToTxtFile(string instancia, string labelName, string path, string txtBox, string message)
@@ -152,7 +222,7 @@ namespace BOT_2._0
 
         private void btnGenerar_Click(object sender, EventArgs e)
         {
-            log(fileLog, e.ToString() + " " + btnGenerar.Text);
+            log(fileLog, "L 225 btnGenerar");
             //path
             string path = @"C:\bots\import\";
             string pathTxt = @"C:\bots\";
@@ -180,23 +250,36 @@ namespace BOT_2._0
                 try
                 {
 
-                    string[] IdProveedor = File.ReadAllLines(pathTxt + @"\" + IdInstance + @"\" + IdInstance + lblIdEmpleado.Text + ".txt");
-                    string[] SunProveedor = File.ReadAllLines(pathTxt + @"\" + IdInstance + @"\" + IdInstance + lblNombreEmpleado.Text + ".txt");
-                    string[] Proveedor = File.ReadAllLines(pathTxt + @"\" + IdInstance + @"\" + IdInstance + lblPlaza.Text + ".txt");
-                    string[] TipoProveedor = File.ReadAllLines(pathTxt + @"\" + IdInstance + @"\" + IdInstance + lblDepartamento.Text + ".txt");
-                    string[] Pais = File.ReadAllLines(pathTxt + @"\" + IdInstance + @"\" + IdInstance + lblGerente.Text + ".txt");
-                    string[] Estatus = File.ReadAllLines(pathTxt + @"\" + IdInstance + @"\" + IdInstance + lblFechaSolicitud.Text + ".txt");
-                    string[] Solicitante = File.ReadAllLines(pathTxt + @"\" + IdInstance + @"\" + IdInstance + lblFechaInicio.Text + ".txt");
+                    string[] idEmpleado = File.ReadAllLines(pathTxt + @"\" + IdInstance + @"\" + IdInstance + lblIdEmpleado.Text + ".txt");
+                    string[] nombreEmpleado = File.ReadAllLines(pathTxt + @"\" + IdInstance + @"\" + IdInstance + lblNombreEmpleado.Text + ".txt");
+                    string[] plaza = File.ReadAllLines(pathTxt + @"\" + IdInstance + @"\" + IdInstance + lblPlaza.Text + ".txt");
+                    string[] departamento = File.ReadAllLines(pathTxt + @"\" + IdInstance + @"\" + IdInstance + lblDepartamento.Text + ".txt");
+                    string[] gerente = File.ReadAllLines(pathTxt + @"\" + IdInstance + @"\" + IdInstance + lblGerente.Text + ".txt");
+                    string[] periodoVacaciones = File.ReadAllLines(pathTxt + @"\" + IdInstance + @"\" + IdInstance + lblPeriodoVacaciones.Text + ".txt");
+                    string[] diasSolicitud = File.ReadAllLines(pathTxt + @"\" + IdInstance + @"\" + IdInstance + lblDiasSolicitud.Text + ".txt");
+                    string[] fechaSolicitud = File.ReadAllLines(pathTxt + @"\" + IdInstance + @"\" + IdInstance + lblFechaSolicitud.Text + ".txt");
+                    string[] fechaInicio = File.ReadAllLines(pathTxt + @"\" + IdInstance + @"\" + IdInstance + lblFechaInicio.Text + ".txt");
+                    string[] fechaRetorno = File.ReadAllLines(pathTxt + @"\" + IdInstance + @"\" + IdInstance + lblFechaRetorno.Text + ".txt");
+                    string[] etapaActual = File.ReadAllLines(pathTxt + @"\" + IdInstance + @"\" + IdInstance + lblEtapaActual.Text + ".txt");
+                    string[] fechaActualizacion = File.ReadAllLines(pathTxt + @"\" + IdInstance + @"\" + IdInstance + lblFechaActualizacion.Text + ".txt");
+                    string[] pais = File.ReadAllLines(pathTxt + @"\" + IdInstance + @"\" + IdInstance + lblPais.Text + ".txt");
+
 
                     // adding array into a list
                     List<string[]> listOfArrays = new List<string[]>();
-                    listOfArrays.Add(IdProveedor);
-                    listOfArrays.Add(SunProveedor);
-                    listOfArrays.Add(Proveedor);
-                    listOfArrays.Add(TipoProveedor);
-                    listOfArrays.Add(Pais);
-                    listOfArrays.Add(Estatus);
-                    listOfArrays.Add(Solicitante);
+                    listOfArrays.Add(idEmpleado);
+                    listOfArrays.Add(nombreEmpleado);
+                    listOfArrays.Add(plaza);
+                    listOfArrays.Add(departamento);
+                    listOfArrays.Add(gerente);
+                    listOfArrays.Add(periodoVacaciones);
+                    listOfArrays.Add(diasSolicitud);
+                    listOfArrays.Add(fechaSolicitud);
+                    listOfArrays.Add(fechaInicio);
+                    listOfArrays.Add(fechaRetorno);
+                    listOfArrays.Add(etapaActual);
+                    listOfArrays.Add(fechaActualizacion);
+                    listOfArrays.Add(pais);
 
                     if ((checkLength(listOfArrays) && !checkBlanks(listOfArrays)))
                     {
@@ -206,24 +289,37 @@ namespace BOT_2._0
                         // Create a new excel from txt files
                         using (SLDocument sl = new SLDocument())
                         {
-                            sl.SetCellValue("A1", "IdProveedor");
-                            sl.SetCellValue("B1", "SunProveedor");
-                            sl.SetCellValue("C1", "Proveedor");
-                            sl.SetCellValue("D1", "TipoProveedor");
-                            sl.SetCellValue("E1", "Pais");
-                            sl.SetCellValue("F1", "Estatus");
-                            sl.SetCellValue("G1", "Solicitante");
-                            for (int i = 1; i <= IdProveedor.Length; i++)
+                            sl.SetCellValue("A1", "IdEmpleado");
+                            sl.SetCellValue("B1", "NombreEmpleado");
+                            sl.SetCellValue("C1", "Plaza");
+                            sl.SetCellValue("D1", "Departamento");
+                            sl.SetCellValue("E1", "Gerente");
+                            sl.SetCellValue("F1", "PeriodoVacaciones");
+                            sl.SetCellValue("G1", "DiasSolicitud");
+                            sl.SetCellValue("H1", "FechaSolicitud");
+                            sl.SetCellValue("I1", "FechaInicio");
+                            sl.SetCellValue("J1", "FechaRetorno");
+                            sl.SetCellValue("K1", "EtapaAcutal");
+                            sl.SetCellValue("L1", "FechaActualizacion");
+                            sl.SetCellValue("M1", "Pais");
+                            for (int i = 1; i <= idEmpleado.Length; i++)
                             {
                                 // check if an array has en emtpy element or if one of them has a different length
 
-                                sl.SetCellValue(i + 1, 1, IdProveedor[i - 1]);
-                                sl.SetCellValue(i + 1, 2, SunProveedor[i - 1]);
-                                sl.SetCellValue(i + 1, 3, Proveedor[i - 1]);
-                                sl.SetCellValue(i + 1, 4, TipoProveedor[i - 1]);
-                                sl.SetCellValue(i + 1, 5, Pais[i - 1]);
-                                sl.SetCellValue(i + 1, 6, Estatus[i - 1]);
-                                sl.SetCellValue(i + 1, 7, Solicitante[i - 1]);
+                                sl.SetCellValue(i + 1, 1, idEmpleado[i - 1]);
+                                sl.SetCellValue(i + 1, 2, nombreEmpleado[i - 1]);
+                                sl.SetCellValue(i + 1, 3, plaza[i - 1]);
+                                sl.SetCellValue(i + 1, 4, departamento[i - 1]);
+                                sl.SetCellValue(i + 1, 5, gerente[i - 1]);
+                                sl.SetCellValue(i + 1, 6, periodoVacaciones[i - 1]);
+                                sl.SetCellValue(i + 1, 7, diasSolicitud[i - 1]);
+                                sl.SetCellValue(i + 1, 8, fechaSolicitud[i - 1]);
+                                sl.SetCellValue(i + 1, 9, fechaInicio[i - 1]);
+                                sl.SetCellValue(i + 1, 10, fechaRetorno[i - 1]);
+                                sl.SetCellValue(i + 1, 11, etapaActual[i - 1]);
+                                sl.SetCellValue(i + 1, 12, fechaActualizacion[i - 1]);
+                                sl.SetCellValue(i + 1, 13, pais[i - 1]);
+                                
                             }
                             sl.SaveAs(excelPath);
                         }
@@ -327,5 +423,7 @@ namespace BOT_2._0
         {
 
         }
+
+       
     }
 }

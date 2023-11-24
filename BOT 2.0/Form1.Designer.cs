@@ -30,6 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             groupBox1 = new GroupBox();
+            btnDiasSolicitud = new Button();
+            txtDiasSolicitud = new TextBox();
+            lblDiasSolicitud = new Label();
+            btnPeriodoVacaiones = new Button();
+            txtPeriodoVacaciones = new TextBox();
+            lblPeriodoVacaciones = new Label();
             btnPais = new Button();
             txtPais = new TextBox();
             lblPais = new Label();
@@ -70,12 +76,6 @@
             btnCerrar = new Button();
             lblNoInstancias = new Label();
             txtNoIntancias = new TextBox();
-            lblPeriodoVacaciones = new Label();
-            txtPeriodoVacaciones = new TextBox();
-            btnPeriodoVacaiones = new Button();
-            lblDiasSolicitud = new Label();
-            txtDiasSolicitud = new TextBox();
-            btnDiasSolicitud = new Button();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -130,6 +130,58 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Datos a guardar";
             // 
+            // btnDiasSolicitud
+            // 
+            btnDiasSolicitud.Location = new Point(420, 255);
+            btnDiasSolicitud.Name = "btnDiasSolicitud";
+            btnDiasSolicitud.Size = new Size(33, 23);
+            btnDiasSolicitud.TabIndex = 44;
+            btnDiasSolicitud.Text = "8";
+            btnDiasSolicitud.UseVisualStyleBackColor = true;
+            btnDiasSolicitud.Click += btnDiasSolicitud_Click;
+            // 
+            // txtDiasSolicitud
+            // 
+            txtDiasSolicitud.Location = new Point(157, 255);
+            txtDiasSolicitud.Name = "txtDiasSolicitud";
+            txtDiasSolicitud.Size = new Size(257, 23);
+            txtDiasSolicitud.TabIndex = 43;
+            // 
+            // lblDiasSolicitud
+            // 
+            lblDiasSolicitud.AutoSize = true;
+            lblDiasSolicitud.Location = new Point(37, 255);
+            lblDiasSolicitud.Name = "lblDiasSolicitud";
+            lblDiasSolicitud.Size = new Size(75, 15);
+            lblDiasSolicitud.TabIndex = 42;
+            lblDiasSolicitud.Text = "DiasSolicitud";
+            // 
+            // btnPeriodoVacaiones
+            // 
+            btnPeriodoVacaiones.Location = new Point(420, 222);
+            btnPeriodoVacaiones.Name = "btnPeriodoVacaiones";
+            btnPeriodoVacaiones.Size = new Size(33, 23);
+            btnPeriodoVacaiones.TabIndex = 41;
+            btnPeriodoVacaiones.Text = "7";
+            btnPeriodoVacaiones.UseVisualStyleBackColor = true;
+            btnPeriodoVacaiones.Click += btnPeriodoVacaiones_Click;
+            // 
+            // txtPeriodoVacaciones
+            // 
+            txtPeriodoVacaciones.Location = new Point(157, 222);
+            txtPeriodoVacaciones.Name = "txtPeriodoVacaciones";
+            txtPeriodoVacaciones.Size = new Size(257, 23);
+            txtPeriodoVacaciones.TabIndex = 40;
+            // 
+            // lblPeriodoVacaciones
+            // 
+            lblPeriodoVacaciones.AutoSize = true;
+            lblPeriodoVacaciones.Location = new Point(32, 225);
+            lblPeriodoVacaciones.Name = "lblPeriodoVacaciones";
+            lblPeriodoVacaciones.Size = new Size(106, 15);
+            lblPeriodoVacaciones.TabIndex = 39;
+            lblPeriodoVacaciones.Text = "PeriodoVacaciones";
+            // 
             // btnPais
             // 
             btnPais.Location = new Point(420, 432);
@@ -138,6 +190,7 @@
             btnPais.TabIndex = 35;
             btnPais.Text = "14";
             btnPais.UseVisualStyleBackColor = true;
+            btnPais.Click += btnPais_Click;
             // 
             // txtPais
             // 
@@ -163,6 +216,7 @@
             btnFechaActualizacion.TabIndex = 32;
             btnFechaActualizacion.Text = "13";
             btnFechaActualizacion.UseVisualStyleBackColor = true;
+            btnFechaActualizacion.Click += btnFechaActualizacion_Click;
             // 
             // txtFechaActualizacion
             // 
@@ -188,6 +242,7 @@
             btnEtapaActual.TabIndex = 29;
             btnEtapaActual.Text = "12";
             btnEtapaActual.UseVisualStyleBackColor = true;
+            btnEtapaActual.Click += btnEtapaActual_Click;
             // 
             // txtEtapaActual
             // 
@@ -213,6 +268,7 @@
             btnFechaRetorno.TabIndex = 26;
             btnFechaRetorno.Text = "11";
             btnFechaRetorno.UseVisualStyleBackColor = true;
+            btnFechaRetorno.Click += btnFechaRetorno_Click;
             // 
             // txtFechaRetorno
             // 
@@ -483,56 +539,6 @@
             txtNoIntancias.Size = new Size(107, 157);
             txtNoIntancias.TabIndex = 4;
             txtNoIntancias.TextChanged += txtNoIntancias_TextChanged;
-            // 
-            // lblPeriodoVacaciones
-            // 
-            lblPeriodoVacaciones.AutoSize = true;
-            lblPeriodoVacaciones.Location = new Point(32, 225);
-            lblPeriodoVacaciones.Name = "lblPeriodoVacaciones";
-            lblPeriodoVacaciones.Size = new Size(106, 15);
-            lblPeriodoVacaciones.TabIndex = 39;
-            lblPeriodoVacaciones.Text = "PeriodoVacaciones";
-            // 
-            // txtPeriodoVacaciones
-            // 
-            txtPeriodoVacaciones.Location = new Point(157, 222);
-            txtPeriodoVacaciones.Name = "txtPeriodoVacaciones";
-            txtPeriodoVacaciones.Size = new Size(257, 23);
-            txtPeriodoVacaciones.TabIndex = 40;
-            // 
-            // btnPeriodoVacaiones
-            // 
-            btnPeriodoVacaiones.Location = new Point(420, 222);
-            btnPeriodoVacaiones.Name = "btnPeriodoVacaiones";
-            btnPeriodoVacaiones.Size = new Size(33, 23);
-            btnPeriodoVacaiones.TabIndex = 41;
-            btnPeriodoVacaiones.Text = "7";
-            btnPeriodoVacaiones.UseVisualStyleBackColor = true;
-            // 
-            // lblDiasSolicitud
-            // 
-            lblDiasSolicitud.AutoSize = true;
-            lblDiasSolicitud.Location = new Point(37, 255);
-            lblDiasSolicitud.Name = "lblDiasSolicitud";
-            lblDiasSolicitud.Size = new Size(75, 15);
-            lblDiasSolicitud.TabIndex = 42;
-            lblDiasSolicitud.Text = "DiasSolicitud";
-            // 
-            // txtDiasSolicitud
-            // 
-            txtDiasSolicitud.Location = new Point(157, 255);
-            txtDiasSolicitud.Name = "txtDiasSolicitud";
-            txtDiasSolicitud.Size = new Size(257, 23);
-            txtDiasSolicitud.TabIndex = 43;
-            // 
-            // btnDiasSolicitud
-            // 
-            btnDiasSolicitud.Location = new Point(420, 255);
-            btnDiasSolicitud.Name = "btnDiasSolicitud";
-            btnDiasSolicitud.Size = new Size(33, 23);
-            btnDiasSolicitud.TabIndex = 44;
-            btnDiasSolicitud.Text = "8";
-            btnDiasSolicitud.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
